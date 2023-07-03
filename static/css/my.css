@@ -1,0 +1,23 @@
+/* my css */
+.user-icon-container {
+    position: relative;
+    display: inline-block;
+}
+
+.user-card {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 1;
+    background-color: white;
+    padding: 10px;
+    border: 1px solid #ccc;
+    max-width: 300px;
+    width: max-content;
+}
+
+.user-icon-container:hover .user-card {
+    display: block;
+}
