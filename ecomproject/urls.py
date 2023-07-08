@@ -17,9 +17,11 @@ Including another URLconf
 from django.conf import settings
 from django.contrib import admin
 from django.urls import path,include
+from accounts import views
 # from django.conf.urls.static import static
 
 urlpatterns = [
+    path('', views.login_view, name='login'),
     path('admin/', admin.site.urls),
     path('home/', include('home.urls')),
     path('api/', include('products.urls')),
